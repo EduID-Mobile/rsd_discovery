@@ -1,7 +1,7 @@
 {
     "name": "eduid-mobile/rsd_discovery",
     "type": "library",
-    "description": "A TLA Service Implementation for Ilias and Moodle",
+    "description": "A simple RSD discovery service",
     "homepage": "https://github.com/eduid-mobile/rsd_discovery",
     "license": "MIT",
     "version": "2.0.3",
