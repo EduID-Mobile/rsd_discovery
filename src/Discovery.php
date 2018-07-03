@@ -48,7 +48,7 @@ class Discovery {
         return true;
     }
 
-    public function findProtocolList($input) {
+    public function findProtocolList($input, $output) {
 
         // error_log("hello");
 
@@ -57,7 +57,7 @@ class Discovery {
         );
 
         // load the protocols
-        $this->data = [];
+        $output->data = [];
 
         $k = array_map(function ($e) { return "sp." . $e; }, array_keys($dbKeys));
 
@@ -101,12 +101,12 @@ class Discovery {
                 }
             }
             if ($rsd) {
-                $this->data[] = $rsd;
+                $output->data[] = $rsd;
             }
         }
 
         $sth->free();
-        if (empty($this->data)) {
+        if (empty($output->data)) {
             throw new \RESTling\Exception\NotFound();
         }
     }
