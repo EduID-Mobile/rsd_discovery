@@ -1,0 +1,25 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "RSD Discovery",
+        "x-protocol": "io.mobinaut.rsd-discovery",
+        "description": "implements an RSD2 Discovery service\n"
+    },
+    "paths": {
+        "/": {
+            "post": {
+                "description": "query the index.\nThis request expects a JSON list in the request body.\nReturns a JSON list of RSD services containing the requested services.",
+                "operationId": "findProtocolList",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        }
+    }
+}

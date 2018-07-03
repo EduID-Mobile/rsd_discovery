@@ -1,0 +1,28 @@
+{
+    "name": "eduid-mobile/rsd_discovery",
+    "type": "library",
+    "description": "A TLA Service Implementation for Ilias and Moodle",
+    "homepage": "https://github.com/eduid-mobile/rsd_discovery",
+    "license": "MIT",
+    "version": "2.0.3",
+    "autoload": {
+        "psr-4": {
+            "Eduid\\Rsd\\":  "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "mobinaut/restling": "dev-dev-v2.0.1",
+        "mobinaut/curler": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/phish108/RESTling"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phish108/Curler"
+        }
+    ]
+}
