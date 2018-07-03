@@ -111,7 +111,7 @@ class Discovery {
         }
     }
 
-    public function addFederationService($input) {
+    public function addFederationService($input, $output) {
         $uri = $input->get("uri", "body");
 
         // if uri is NOT part of our services, we add it
