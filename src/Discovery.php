@@ -3,7 +3,7 @@ namespace Eduid\Rsd;
 
 require_once('MDB2.php');
 
-class Discovery extends \RESTling\Model {
+class Discovery {
     private $db;
 
     public function __construct($inifile) {
